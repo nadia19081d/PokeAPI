@@ -192,7 +192,24 @@ main{
     padding: .25rem 0.5rem;
     border-radius: 100vmax;
 }
+.nombre-pokemon {
+  border-radius: 4px; /* Redondea ligeramente los bordes */
+  border: 1px solid #995309; /* Mismo color que el botón */
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto negro */
+  font-size: 1.2rem; /* Tamaño de fuente similar al botón */
+  padding: 0.4rem 0.8rem; /* Espaciado similar al botón */
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra similar al botón */
+}
 
+/* Estilos para el foco (cuando el campo está activo) */
+.nombre-pokemon:focus {
+  border-color: #d9750b; /* Cambia el color del borde al mismo que el botón */
+  outline: none; /* Quita el contorno predeterminado al enfocar */
+}
 
 /* Aquí comienzan los colores de botones según tipo */
 .normal {
@@ -283,4 +300,23 @@ main{
 .fairy {
     background-color: var(--type-fairy);
     color: var(--clr-black);
+}
+
+#button-pokemon {
+  padding: 0.4rem 0.8rem; /* Tamaño más pequeño */
+  border: 1px solid #995309;
+  border-radius: 4px;
+  background-color: #d9750b;
+  color: #fff;
+  font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset,
+    0 1px 3px rgba(0, 0, 0, .2);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f90), to(#e76a00));
+  background-image: linear-gradient(#f90 10%, #e76a00 100%);
+  
+  /* Centrar el botón horizontalmente */
+  display: block; /* Convertirlo en un elemento de bloque para que ocupe todo el ancho disponible */
+  margin: 0 auto; 
+  margin-bottom: 10px;/* Margen automático a la izquierda y derecha para centrar */
 }
